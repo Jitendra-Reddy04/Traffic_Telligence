@@ -46,11 +46,9 @@ def predict():
             hours,
             minutes,
             0,         
-                      # seconds (fixed as 0)
             holiday_enc,
             weather_enc
         ]])
-        # Scale input
         input_scaled = scaler.transform(input_data)
 
         #  Prediction 
