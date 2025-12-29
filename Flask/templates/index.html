@@ -63,7 +63,6 @@
 
     <form action="{{ url_for('predict') }}" method="post">
 
-        <!-- Holiday -->
         <label>Holiday:</label>
         <select name="holiday" required>
             <option value="None">None</option>
@@ -81,19 +80,15 @@
             <option value="Washingtons Birthday">Washingtons Birthday</option>
         </select>
 
-        <!-- Temperature -->
         <label>Temperature (Kelvin):</label>
         <input type="number" name="temp" step="0.01" required>
 
-        <!-- Rain -->
         <label>Rain (mm):</label>
         <input type="number" name="rain" step="0.01" required>
 
-        <!-- Snow -->
         <label>Snow (mm):</label>
         <input type="number" name="snow" step="0.01" required>
 
-        <!-- Weather -->
         <label>Weather:</label>
         <select name="weather" required>
             <option value="Clear">Clear</option>
@@ -109,7 +104,6 @@
             <option value="Thunderstorm">Thunderstorm</option>
         </select>
 
-        <!-- Date & Time -->
         <label>Day:</label>
         <input type="number" name="day" min="1" max="31" required>
 
